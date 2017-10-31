@@ -1,0 +1,305 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+   /* font-family: 'Amiri',Helvetica,Arial,sans-serif; */
+    direction: rtl;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.container{
+   /* margin: 20px 45px; */
+}
+
+a{
+    color: #FF7F27;
+    font-weight: bold;
+    
+}
+
+.courseName{
+    height: 100vh;
+    background-color: #00A2E8; 
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    padding-top: 100px;
+    min-height: 80vh;
+}
+
+.downArrow , .downArrowChild, .downArrowGrandchild{
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+.downArrow{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transform: rotate(135deg);
+}
+.downArrowChild{
+    width: 50%;
+    height: 50%;
+    margin: 10% 10% 45% 45%;
+}
+
+.downArrowGrandchild{
+    width: 50%;
+    height: 50%;
+    margin: 20% 20% 45% 45%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------
+---------------------------------------------- content ------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+.content{
+    height: 100vh;
+}
+
+/************************************************* Nav Bar *************************************************/
+
+#forWho{
+    background-color: #fff;
+}
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebebeb;
+    font-weight: bold;
+    
+}
+
+.navBar ul li {
+    float: right;
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+}
+
+.navBar ul li a {
+     margin: 10px;
+    display: block;
+    color: #00A2E8;
+    text-align: center;
+   
+    text-decoration: none;
+}
+
+.navBar ul li:nth-last-child(1){
+        border: none;
+}
+
+.navBar ul li:hover a {
+     cursor: pointer;
+}
+
+/************************************************* forWho *************************************************/
+
+.miniContainer{
+    width: auto;
+    height: calc(100vh - 50px - 100px); /* 50px > navbar  & 100px > booking */
+    overflow: scroll;
+}
+
+.forWho{
+    padding: 5% 10%;
+    display: block;
+}
+
+.forWho .c1 , .forWho .c2, .forWho .c3{
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+.forWho .c1{
+    border-right: 2px solid #4BBF6E;
+}
+
+.forWho .c2{
+    border-right: 2px solid #FF964F;
+}
+
+.forWho .c3{
+    border-right: 2px solid #00A2E8;
+}
+/************************************************* outline *************************************************/
+.outline{
+    padding: 1% 10%;
+display: none;
+}
+
+.outline .toggle {
+    background-color: #FF7F27;
+    color: #fff;
+    padding: 0.5% 1%; 
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+.outline .toggle:hover {
+    cursor:pointer;
+}
+i{
+    float: left;
+        padding-left: 7px;
+
+}
+
+.outline .outlineContent{
+    display: none;
+    padding: 1% 2%; 
+}
+.outline .outlineContent li{
+    color: #FF7F27;
+}
+.outline .outlineContent li span{
+    color: black;
+}
+
+/************************************************* others *************************************************/
+.others{
+    padding: 5% 10%;
+    display: none;
+}
+
+.others .duration , .others .requirements, .others .system{
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+.others .duration{
+    border-right: 2px solid #4BBF6E;
+}
+
+.others .requirements{
+    border-right: 2px solid #FF964F;
+}
+
+.others .system{
+    border-right: 2px solid #00A2E8;
+}
+.others .headline{
+    font-weight: bold;
+}
+        
+/************************************************* instructor *************************************************/
+.instructor{
+    direction: ltr;
+    text-align: left;
+    font-size: 20px;
+    display: none;
+    padding: 5% 10%;
+}
+
+.instructor .c1 , .instructor .c2, .instructor .c3{
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.instructor .c1{
+    border-left: 2px solid #4BBF6E;
+}
+
+.instructor .c2{
+    border-left: 2px solid #FF964F;
+}
+
+.instructor .c3{
+    border-left: 2px solid #00A2E8;
+}
+
+/************************************************* why *************************************************/
+
+.why{
+    padding: 5% 10%;
+    display: none;
+}
+
+.why .c1 , .why .c2, .why .c3 , .why .c4{
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+.why .c1{
+    border-right: 2px solid #4BBF6E;
+}
+
+.why .c2{
+    border-right: 2px solid #FF964F;
+}
+
+.why .c3{
+    border-right: 2px solid #00A2E8;
+}
+
+.why .c4{
+    border-right: 2px solid #4BBF6E;
+}
+.why .headline{
+    font-weight: bold;
+}
+
+/************************************************* booking *************************************************/
+
+.booking{
+    background-color: #00A2E8;
+    color: #fff;
+    text-align: center;
+    width: auto;
+    height: 105px;
+    
+}
+
+.booking .c1{
+    font-size: 30px;
+}
+
+
+
+/************************************************* Media Query *************************************************/
+
+@media(max-width: 690px) {
+    .courseName{
+    font-size: 65px;
+    }
+}
+
+@media(max-width: 630px) {
+    .courseName{
+    
+    font-size: 60px;
+    
+    }
+}
+
+@media(max-width: 570px) {
+    .courseName{
+    
+    font-size: 55px;
+    
+    }
+}
+
+@media(max-width: 520px) {
+    .courseName{
+    
+    font-size: 50px;
+    
+    }
+}
+
+@media(max-width: 470px) {
+    .courseName{
+    
+    font-size: 40px;
+    
+    }
+}
+
+@media(max-width: 420px) {
+    .courseName{
+    
+    font-size: 35px;
+    
+    }
+}

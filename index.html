@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <link rel="shortcut icon" type="image/png" href="http://www.freeiconspng.com/uploads/sql-server-icon-8.png"/>
+        <meta charset="utf-8" />
+        <base target="_blank">
+        <title>SQL Server Course</title>
+        <!-- Links -->
+        <link href="style.css" rel="stylesheet" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+        <script src="script.js" ></script>
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Start Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Amiri|El+Messiri" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="courseName">
+                <p>Developing Microsoft</p>
+                <p>SQL Server 2016</p>
+                <p>Databases</p>
+                <div class="downArrow">
+                    <div class="downArrowChild">
+                        <div class="downArrowGrandchild"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="navBar">
+                    <ul>
+                        <li id ="forWho"><a>لمن الكورس؟</a></li>
+                        <li id ="outline"><a>تفاصيل الكورس</a></li>
+                        <li id ="why"><a>مميزات الكورس</a></li>
+                        <li id ="instructor"><a>نبذة عن المحاضر</a></li>
+                        <li id ="others"><a>معلومات أخرى</a></li>
+                        <!--
+                        <li><a href="#duration">مدة الكورس</a></li>
+                        <li><a href="#prerequisites">المتطلبات الواجب توافرها</a></li>
+                        <li><a href="#system">نظام الكورس</a></li>
+                        <li><a href="#cost">تكلفة الكورس</a></li>
+                        <!--li><a href="#enroll">للـحجز والإستعلام</a></li>
+                        -->
+                    </ul>
+                </div>
+                <!-- ************************************************************************* -->
+                <!-- *********************** Begin miniContainer ***************************** --> 
+                <!-- ************************************************************************* -->
+                <div class="miniContainer">
+                    <!-- ************************************************************************* -->
+                    <!-- ******************************  For How  ******************************** --> 
+                    <!-- ************************************************************************* --> 
+                    <div class="forWho">
+                            <div class="c1">
+                                <p>لو إنت طالب في مجال البرمجة</p>
+                                <p>وشايف إن الجزء الخاص بقواعد البيانات مش مفهوم ليك</p>
+                            </div>
+                            <div class="c2">
+                                <p>أو لو إنت مبرمج، لكن شايف إن قاعدة البيانات ما هي إلا مخزن وبس</p>
+                                <p>وشغلك كله على لغة البرمجة، ومحتاج تعرف تقنيات وأدوات أكتر تمكنك</p>
+                                <p>من تعظيم الإستفادة بقواعد البيانات في برامجك</p>
+                            </div>
+                            <div class="c3">
+                                <p>أو لو إنت مبتدئ في المجال .. وحابب تتعرف على قواعد البيانات السيكوال سيرفر</p>
+                                <p>من البداية خالص ولغاية لما تتمكن من إستخدامها</p>
+                                <p>بالشكل المناسب ليها وللبرنامج اللي هتعمله</p>
+                                <p>يبقا الكورس دا موجه ليك إنت</p>
+                            </div>
+                    </div>
+                    <!-- ************************************************************************* -->
+                    <!-- ******************************  outline  ******************************** --> 
+                    <!-- ************************************************************************* -->
+
+                    <div class="outline">
+                        <div class="toggle">Database basics / مقدمة عن قواعد البيانات ومبادئها
+                        <i class="fa fa-caret-down fa-2x"></i>
+                        </div>
+                        <div class="outlineContent">
+                            <li><span>What is a database / ما هي قواعد البيانات ؟</span></li>
+                            <li><span>What is a DBMS / ما المقصود بـ DBMS</span></li>
+                            <li><span>What is a table / ما هو الجدول ؟</span></li>
+                            <li><span>What is a column / ما هو العمود</span></li>
+                            <li><span>What is a Row / ما هو الصف</span></li>
+                            <li><span>SQL Statements (DML, DDL, DCL, TCL & DQL) / نبذة عن SQL Statements وماذا تعني كل من DML, DDL, DCL, TCL & DQL وما هي الأوامر المستخدمة المندرجة لكل منهم مع شرح ماهية كل أمر.</span></li>
+                        </div>
+                      <!-- --------------------------------------------------------------------------- -->
+                <div>
+                <div class="toggle">
+                Getting Started with SELECT / البداية مع الـ SELECT
+                <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                <div class="outlineContent">
+                    <li><span>Connecting to a Database. / الإتصال بقاعدة البيانات</span></li>
+                    <li><span>Retrieving Specific Columns / إستعادة أعمدة محددة</span></li>
+                    <li><span>Retrieving All Columns / إستعادة كل الأعمدة.</span></li>
+                    <li><span>Specifying the Rows to Be Returned / إستعادة صفوف معينه</span></li>
+                    <li><span>Renaming the Output Columns. / تسمية الأعمدة في نتيجة الإستعلام</span></li>
+                    <li><span>Building a Column from an Expression / إنشاء عمود جديد ناتج من Expression</span></li>
+                    <li><span>Providing Shorthand Names for Tables / إعطاء أسماء مختصرة للجداول</span></li>
+                    <li><span>Negating a Search Condition / إهمال البحث</span></li>
+                    <li><span>Specifying A Range of Values / تحديد نطاق معين من القيم للبحث عنها</span></li>
+                    <li><span>Checking for NdivL Values / البحث عن قيم تحمل قيمة NdivL</span></li>
+                    <li><span>Providing a List of Values / البحث عن قائمة معينة</span></li>
+                    <li><span>Performing Specific Searches / إجراء عمليات بحث محددة ومتنوعة بإستخدام Wild Card</span></li>
+                    <li><span>Sorting Your Resdivts / ترتيب النتائج</span></li>
+                    <li><span>Specifying Sort Order / تحديد طريقة ترتيب النتائج.</span></li>
+                </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Working with NdivLs / كيفية العمل مع الـ NdivLs وطرق التعامل معها
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Replacing NdivL with a specified value / إستبدال قيمة تحمل NdivL  بقيمة محددة أخرى.</span></li>
+                        <li><span>Returning the First Non-NdivL Value from a List / إستعادة القيمة الأولى التي لا تحتوي على NdivL  من قائمة محددة.</span></li>
+                        <li><span>Choosing Between ISNdivL and COALESCE / الإختيار ما بين ISNdivL و COALESCE ولماذا ؟</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Querying from Mdivtiple Tables / الإستعلام من خلال أكثر من جدول.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Correlating Parent and Child Rows / ربط جدول الأب مع جدول الإبن.</span></li>
+                        <li><span>Making One Side of a Join Optional / ربط جدول أو أكثر في إتجاه واحد</span></li>
+                        <li><span>Making Both Sides of a Join Optional / ربط جدول أو أكثر في كلا الإتجاهيين</span></li>
+                        <li><span>Generating All Possible Row Combinations / إستدعاء كل الإحتمالات الممكنة من الربط بين جدول أو أكثر</span></li>
+                        <li><span>Selecting from a Resdivt Set / الإستدعاء من نتيجة إستعلام بدلا من جدول مباشر</span></li>
+                        <li><span>Stacking Two Row Sets Vertically / إستدعاء نتيجتي إستعلام بشكل عمودي</span></li>
+                        <li><span>Eliminating Duplicate Values from a Union / إهمال الصفوف المكررة عند إستخدام Union</span></li>
+                        <li><span>Finding Rows That Are Missing /إيجاد الصفوف المفقودة من إستعلام بمعلومية إستعلام آخر.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Advanced Select Techniques / تقنيات متقدمة مع إستخدام SELECT
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Avoiding Duplicate Resdivts / إهمال النتائج المكررة.</span></li>
+                        <li><span>Returning the Top N Rows / إستعادة عدد معين من الصفوف</span></li>
+                        <li><span>Retrieving Data Directly into Variables / إستعادة قيمة داخل متغير مباشرة.</span></li>
+                        <li><span>Creating a New Table with the Resdivts from a Query / إنشاء جدول جديد بمعلومية نتيجة إستعلام.</span></li>
+                        <li><span>Returning Random Rows from a Table / إستعادة بعض من  الصفوف بطريقة عشوائية</span></li>
+                        <li><span>Hard-Coding the Resdivts from a Query / إنشاء إستعلام عن طريق قيم ثابته</span></li>
+                        <li><span>Changing Server Authentication Mode / تغيير المصادقة الخاصة بالخادم.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Inserting, Updating & Deleting / الإدراج والتحديث والحذف
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Inserting a New Row / إدراج صف جديد</span></li>
+                        <li><span>Overriding an IDENTITY Column / تجاوز عمود بصفة IDENTITY لمحاولة إدراج صف جديد يدويا</span></li>
+                        <li><span>Generating a Globally Unique Identifier (GUID) / إنشاء عمود بصفة GUID</span></li>
+                        <li><span>Inserting Resdivts from a Query / إدراج ناتج إستعلام مرة واحدة.</span></li>
+                        <li><span>Updating a Single Row or Set of Rows / تحديث صف واحد أو عدة صفوف.</span></li>
+                        <li><span>Updating with a Second Table as the Data Source / تحديث جدول معين بمعلومية جدول آخر.</span></li>
+                        <li><span>Updating Large-Value Columns / تحديث حجم كبير من البيانات بشكل إحترافي للمحافظة على الأداء الجيد لقاعدة البيانات.</span></li>
+                        <li><span>Deleting Rows / حذف الصفوف بالكامل.</span></li>
+                        <li><span>Deleting Specific Rows / حذف صفوف معينه.</span></li>
+                        <li><span>Deleting Rows and Returning the Deleted Rows / حذف الصفوف مع إستعادة الصفوف المحذوفة.</span></li>
+                        <li><span>The difference between truncate and delete / الفرق الكامل بين truncate و delete (10 أوجه إختلاف)</span></li>
+                        <li><span>Merging Data (Inserting, Updating, or Deleting Values) / التعامل مع Merge عن طريق الإدراج والتحديث والحذف بجمله واحدة.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Working with Strings / التعامل مع أنواع البيانات - النصوص
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Concatenating Mdivtiple Strings / ربط عدة نصوص في نص واحد بأكثر من طريقة.</span></li>
+                        <li><span>Finding a Character’s ASCII Value / البحث عن حرف بقيمة ASCII</span></li>
+                        <li><span>Returning Integer and Character Unicode Values / البحث عن حرف بقيمة Unicode</span></li>
+                        <li><span>Locating a Substring / البحث عن نص معين داخل نص أخر.</span></li>
+                        <li><span>CHARINDEX vs. PATINDEX / الفرق بين CHARINDEX و PATINDEX</span></li>
+                        <li><span>Determining the Similarity of Strings / تحديد التشابه في الصوت بين عدة نصوص.</span></li>
+                        <li><span>Returning the Left/Right Portion of a String / إستعادة جزء من نص من يمين النص أو شماله.</span></li>
+                        <li><span>Returning Part of a String / إستعادة جزء من النص.</span></li>
+                        <li><span>Counting Characters or Bytes in a String / إحصاء الحروف داخل نص معين</span></li>
+                        <li><span>Replacing Part of a String / إستبدال نص بنص آخر.</span></li>
+                        <li><span>Stuffing a String into a String / حشو نص داخل نص آخر.</span></li>
+                        <li><span>Changing Between Lower- and Uppercase / تغيير الحروف من Lower إلى Upper والعكس.</span></li>
+                        <li><span>Removing Leading and Trailing Blanks / حذف المسافات الزائدة من نص معين.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Working with Dates and Times / التعامل مع أنواع البيانات – التواريخ والأوقات.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Returning the Current Date and Time / إستعادة التاريخ الحالي بأكثر من طريقة.</span></li>
+                        <li><span>Converting Between Time Zones / التحويل بين المناطق الزمنية المختلفة</span></li>
+                        <li><span>Incrementing or Decrementing a Date's Value / كيفية تزايد وتناقص قيمة التاريخ.</span></li>
+                        <li><span>Finding the Difference between Two Dates / إيحاد الفرق بين تاريخيين.</span></li>
+                        <li><span>Displaying the String Value for Part of a Date / عرض النص من خلال جزء من التاريخ.</span></li>
+                        <li><span>Displaying the Integer Representations for Parts of a Date / عرض الأرقام من خلال جزء من التاريخ</span></li>
+                        <li><span>Determining Whether a String Is a Valid Date / تحديد ما هية القيمة هل تاريخ أم لا ؟</span></li>
+                        <li><span>Determining the Last Day of the Month / تحديد اليوم الأخير من الشهر.</span></li>
+                        <li><span>Creating a Date from Numbers / إنشاء تاريخ من الأرقام</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Working with Numbers / التعامل مع أنواع البيانات – الأرقام.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Representing Integers / شرح الأرقام من TinyTint و Smallint و Int و BigInt</span></li>
+                        <li><span>Representing Decimal Amounts / شرح الأرقام العشرية.</span></li>
+                        <li><span>Representing Monetary Amounts /شرح الأرقام الخاصة بالنقود.</span></li>
+                        <li><span>Rounding / التقريب.</span></li>
+                        <li><span>Rounding Always Up or Down / التقريب لأعلى ولأسفل.</span></li>
+                        <li><span>Converting to absolute values / تحويل قيم مطلقة من قيمة سالب لقيمة موجب.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Managing Tables / التعرف على الجداول وكيفية التعامل معها.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Creating a Table / إنشاء جدول</span></li>
+                        <li><span>Adding a Column / إضافة عمود</span></li>
+                        <li><span>Adding a Column That Requires Data / إضافة عمود يتطلب وجود قيم.</span></li>
+                        <li><span>Changing a Column / تعديل عمود.</span></li>
+                        <li><span>Creating a Computed Column / إنشاء عمود من نوع Computed</span></li>
+                        <li><span>Removing a Column / حذف عمود.</span></li>
+                        <li><span>Removing a Table / حذف جدول.</span></li>
+                        <li><span>Reporting on a Table’s Definition / إصدار تقرير لجدول معين.</span></li>
+                        <li><span>Reducing Storage Used by NdivL Columns / تقليص المساحة الخاصة بالأعمدة المخزن بها قيم من نوع NdivL</span></li>
+                        <li><span>Adding a Constraint to a Table / إضافة محدد معين داخل الجدول</span></li>
+                        <li><span>Creating a Recursive Foreign Key / إنشاء مفتاح من نوع Recursive Foreign Key</span></li>
+                        <li><span>Specifying Defadivt Values for a Column / تحديد قيم إفتراضية.</span></li>
+                        <li><span>Validating Data as It Is Entered into a Column / التحقق من صحة البيانات المدرجة داخل الجدول</span></li>
+                        <li><span>Temporarily Turning Off a Constraint /إيقاف محدد بشكل مؤقت.</span></li>
+                        <li><span>Removing a Constraint /حذف محدد.</span></li>
+                        <li><span>Creating Auto-incrementing Columns / إنشاء عمود له صفة Auto-incrementing</span></li>
+                        <li><span>Obtaining the Identity Value Used / الحصول على قيمة من نوع Identity</span></li>
+                        <li><span>Viewing or Changing the Seed Settings on an Identity Column / فحص وتغيير Seed الخاص بعمود يحمل صفة Identity</span></li>
+                        <li><span>Inserting Values into an Identity Column / إدراج قيم داخل عمود يحمل صفة Identity</span></li>
+                        <li><span>Using Unique Identifiers across Mdivtiple Tables / إستخدام Sequence  لربطه بين عدة جداول يحمل نفس صفة الـ  Identity</span></li>
+                        <li><span>Using Temporary Storage / إستخدام تخزين مؤقت بأكثر من طريقة</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Managing Views / التعرف على Views وكيفية التعامل معها.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Creating a View / إنشاء View</span></li>
+                        <li><span>Querying a View’s Definition / الإستعلام عن View’s Definition</span></li>
+                        <li><span>Obtaining a List of All Views in a Database / إستعلام كل الـ Views داخل قاعدة البيانات</span></li>
+                        <li><span>Obtaining a List of All Columns in a View / إستعلام كل الأعمدة داخل Views</span></li>
+                        <li><span>Refreshing the Definition of a View / تحديث View</span></li>
+                        <li><span>Modifying a View / تعديل View</span></li>
+                        <li><span>Encrypting a View / تشفير View</span></li>
+                        <li><span>Indexing a View /فهرسة View</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Managing Indexes / التعرف على الفهارس وكيفية التعامل معها.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Creating a Table Index / إنشاء فهرس لجدول.</span></li>
+                        <li><span>Enforcing Uniqueness on Non-key Columns / فرض عدم إدخال قيم مكررة لعمود ليس به أي مفتاح.</span></li>
+                        <li><span>Creating an Index on Mdivtiple Columns / إنشاء فهرس واحدة لعدة أعمدة.</span></li>
+                        <li><span>Defining Index Column Sort Direction / تحديد نوع الفهرسة</span></li>
+                        <li><span>Viewing Index Metadata / الإستعلام عن Metadata للفهرس</span></li>
+                        <li><span>Disabling an Index / تعطيل الفهرس</span></li>
+                        <li><span>Dropping Indexes / إلغاء الفهرس</span></li>
+                        <li><span>Changing an Existing Index / تعديل فهرس</span></li>
+                        <li><span>User Table Access during Index Creation / السماح للوصول لجدول معين أثناء إنشاء فهرس</span></li>
+                        <li><span>Indexing a Subset of Rows / فهرسة بعض الصفوف فقط داخل العمود.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Stored Procedures / التعرف على الإجراءات المخزنة وكيفية التعامل معها.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Selling the Benefits / التعرف على مميزات إستخدام الإجراءات المخزنة.</span></li>
+                        <li><span>Creating a Stored Procedure / إنشاء إجراء مخزن.</span></li>
+                        <li><span>Generalizing a Stored Procedure / إنشاء إجراء مخزن عام</span></li>
+                        <li><span>Making Parameters Optional / إنشاء Parameters من نوع إختياري.</span></li>
+                        <li><span>Returning Output / إستعادة نتائج داخل الإجراء المخزن.</span></li>
+                        <li><span>Modifying a Stored Procedure /تعديل إجراء مخزن.</span></li>
+                        <li><span>Removing a Stored Procedure / حذف إجراء مخزن.</span></li>
+                        <li><span>Automatically Run a Stored Procedure at Start-Up / تشغيل إجراء مخزن بشكل تلقائي بمجرد بدء تشغيل الخادم</span></li>
+                        <li><span>Viewing a Stored Procedure’s Definition / الإستعلام عن Definition الخاص بالإجراء المخزن.</span></li>
+                        <li><span>Encrypting a Stored Procedure / تشفير الإجراء المخزن.</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        User-Defined Functions and Types / التعرف على الوظائف والأنواع وكيفية التعامل معهم.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Creating Scalar Functions / إنشاء وظيفة من نوع Scalar</span></li>
+                        <li><span>Creating Inline Functions / إنشاء وظيفة من نوع Inline</span></li>
+                        <li><span>Modifying User-Defined Functions / تعديل الوظيفة</span></li>
+                        <li><span>Viewing UDF Metadata / إستعلام Metadata للوظيفة</span></li>
+                        <li><span>Maintaining Reusable Code / المحافظة على إستخدام الإستعلام في أكثر من مكان.</span></li>
+                        <li><span>Replacing a View with a Function / إستبدال الـ View مع الوظيفة.</span></li>
+                        <li><span>Dropping a Function / حذف الوظيفة.</span></li>
+                        <li><span>Creating and Using User-Defined Types /إنشاء وإستخدام نوع البيانات من طريق المستخدم.</span></li>
+                        <li><span>Identifying Dependencies on User-Defined Types / تحديد كل الـ Objects  المرتبطة بنوع البيان للمستخدم.</span></li>
+                        <li><span>Dropping User-Defined Types /حذف البيان الخاص بالمستخدم</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Error Handling / كيفية معالجة الأخطاء.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Handling batch errors / التعامل مع الأخطاء الخاصة بالـ Batch</span></li>
+                        <li><span>What are the error numbers and messages within SQL Server / ما هي ارقام الأخطاء ورسائل الخطا بداخل الـ SQL Server </span></li>
+                        <li><span>How can I implement structured error handling in my queries / كيفية معالجة الأخطاء داخل الإستعلامات</span></li>
+                        <li><span>How can I use structured error handling, but still return an error / كيفية معالجة الأخطاء مع الحفاظ على إسترجاع الخطا</span></li>
+                        <li><span>Throwing an error / إنشاء خطأ</span></li>
+                        <li><span>Creating a user defined error / إنشاء خطأ يحدده المستخدم.</span></li>
+                        <li><span>Removing a user defined error / حذف الخطأ</span></li>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        Triggers / التعرف على Triggers وكيفية التعامل معها.
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Creating an AFTER DML Trigger / إنشاء Trigger من نوع AFTER</span></li>
+                        <li><span>Creating an INSTEAD OF DML Trigger / إنشاء Trigger من نوع INSTEAD OF</span></li>
+                        <li><span>Handling Transactions in Triggers / التعامل مع Transactions خلال Triggers</span></li>
+                        <li><span>Linking Trigger Execution to Modified Columns / ربط Triggers مع الأعمدة المعدلة</span></li>
+                        <li><span>Viewing DML Trigger Metadata /فحص Metadata  الخاصة بالـ Triggers من نوع DML</span></li>
+                        <li><span>Creating a Logon Trigger / إنشاء Triggers من نوع Logon</span></li>
+                        <li><span>Viewing DDL Trigger Metadata /فحص Metadata  الخاصة بالـ Triggers من نوع DDL</span></li>
+                        <li><span>Modifying a Trigger / تعديل Trigger</span></li>
+                        <li><span>Enabling and Disabling a Trigger / تشغيل أو تعطيل Trigger</span></li>
+                        <li><span>Nesting Triggers / كيفية التعامل وتشغيل Nesting Triggers</span></li>
+                        <li><span>Controlling Recursion / التخكم في Recursion</span></li>
+                        <li><span>Dropping a Trigger / حذف Trigger</span></li>
+                    </div>
+                </div>
+                 <!-- --------------------------------------------------------------------------- -->
+                <div>
+                    <div class="toggle">
+                        New Features in SQL Server 2016 for Developers / الميزات الجديدة للـ SQL Server 2016 للمطورين
+                    <i class="fa fa-caret-down fa-2x"></i>
+                </div>
+                    <div class="outlineContent">
+                        <li><span>Temporal Tables/ ما هي الـ Temporal Tables مع Demo</span></li>
+                        <li><span>IFI - Instant File Initialization / ما هو الـ IFI مع شرح الـ Retractions مع Demo</span></li>
+                        <li><span>STRING_SPLIT</span></li>
+                        <li><span>CEEATE or ALTER</span></li>
+                        <li><span>DROP IF EXISTS</span></li>
+                    </div>
+                </div>
+                    </div>
+                    <!-- ************************************************************************* -->
+                    <!-- ******************************  system   ******************************** --> 
+                    <!-- ************************************************************************* -->
+                    <div class="others">
+                        <div class="duration">
+                            <p class="headline">مدة الكورس</p>
+                            <p>40 ساعة</p>
+                        </div>
+                        <div class="requirements">
+                            <p class="headline">المتطلبات الواجب توافرها لدى المتقدم للكورس</p>
+                            <p>لا يوجد، الكورس سيتم تقديمه من الصفر</p>
+                        </div>
+                         <div class= "system">
+                            <p class="headline">نظام الكورس</p>
+                            <p>الكورس أونلاين عبر قاعات إفتراضية تسمح بالتواصل المباشر مع المحاضر أثناء الشرح</p>
+                        </div>
+                    </div>
+                    <!-- ************************************************************************* -->
+                    <!-- ***************************  instructor  ******************************** --> 
+                    <!-- ************************************************************************* -->
+                    <div class="instructor">
+                        <div class="c1">
+                            <p>Microsoft Certified Technology Specialist SQL Server Implementation and Maintenance</p>
+                            <p>Microsoft Certified Technology Specialist SQL Server Database Development</p>
+                        </div>
+                        <div class="c2">
+                            <p>Microsoft Certified IT Professional Database Developer</p>
+                            <p>Microsoft Certified IT Professional Database Administrator</p>
+                            <p>Microsoft Certified Technology Specialist - MCTS</p>
+                            <p>Microsoft Certified IT Professional - MCITP</p>
+                        </div>
+                        <div class="c3">
+                            <p>Senior Software Developer at <a href="https://www.its.ws/">ITS</a></p>
+                            <p>Instructor at <a href="https://www.aldarayn.com/">Aldarayn</a> Academy</p>
+                        </div>
+                    </div> 
+                    <!-- ************************************************************************* -->
+                    <!-- *************************** Why  ******************************** --> 
+                    <!-- ************************************************************************* -->
+                    <div class="why">
+                        <div class="c1">
+                            <p class="headline">آخر إصدار</p>
+                            <p>هنتعرف على الإصدار الأخير من SQL Server 2016</p>
+                        </div>
+                        <div class="c2">
+                            <p class="headline">مهتم بالتفاصيل</p>
+                            <p>بخلاف أي كورس SQL Server تاني</p>
+                            <p>الكورس دا مهتم جداً بالتفاصيل اللي هتأهلك تفهم خبايا وأسرار الـ SQL Server</p>
+                            <p>ومعرفة نقاط في منتهى القوة هي اللي هتميزك عن غيرك في المجال</p>
+                        </div>
+                        <div class="c3">
+                            <p class="headline">معاك من الصفر</p>
+                            <p>مش لازم يكون عندك أي خلفية مسبقة عن الـ SQL Server</p>
+                            <p>الكورس دا هيبدأ معاك من الصفر، ولمستوى قريب من الإحتراف</p>
+                        </div>
+                         <div class="c4">
+                            <p class="headline">خبرة المحاضر</p>
+                            <p>الكورس هيدهولك محاضر قوي في المجال وعنده خبرة في قواعد البيانات أكتر من 6 سنين</p>
+                            <p>مش مجرد حد سمع فيديوهات أو قرأ كام مقال وخلاص</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ************************************************************************* -->
+                <!-- ***********************  End miniContainer  ***************************** --> 
+                <!-- ************************************************************************* -->
+
+                <!-- ************************************************************************* -->
+                <!-- ******************************Begin  booking  *************************** --> 
+                <!-- ************************************************************************* -->
+                <div class="booking">
+                    <p class="c1">لـلـحـجـــــز والإسـتـعــــلام</p>
+                    <p class="c2">التواصل على رسائل <a href="https://www.facebook.com/SQLServerTraining"><span class="headline" >صفحتنا</span></a> عبر الفيس بوك</p>
+                </div>
+                <!-- ************************************************************************* -->
+                <!-- ****************************** End  booking  **************************** --> 
+                <!-- ************************************************************************* -->
+            </div>
+        </div>
+    </body>
+</html>
