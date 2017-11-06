@@ -1,0 +1,228 @@
+/* ===================== Start General ===================== */
+* {
+    font-family:'Droid Arabic Kufi', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+ul {list-style: none; padding: 0}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px
+}
+a {
+    color: #ff8d3f;
+    font-weight: bold
+}
+/* ===================== End General ===================== */
+/* ===================== Start Header ===================== */
+.header {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background: #00A2E8;
+    color: #fff;
+    text-align: center;
+    position: relative
+}
+.header .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.header .text h2 {
+    font-weight: normal;
+    font-size: 65px;
+    font-family: 'Text Me One', sans-serif;
+}
+.header .arrow {
+    width: 40px;
+    height: 40px;
+    margin: 50px auto 0;
+    position: relative
+}
+.header .arrow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+    transform: translate(5px, 75px) rotate(-45deg);
+    animation: arrows 2s linear infinite;
+    cursor: pointer
+}
+.header .arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+    transform: translate(30px, 0) rotate(-45deg);
+    animation: arrows 2s linear infinite -1.5s;
+    cursor: pointer
+}
+@keyframes arrows {
+    0% {
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        transform: translate(-15px, -30px) rotate(-45deg);
+    }
+    10%, 90% {
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+    50% {
+        border-left: 5px solid rgba(255, 255, 255, 0.7);
+        border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+        transform: translate(-15px, 0px) rotate(-45deg);
+    }
+    100% {
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        transform: translate(-15px, 30px) rotate(-45deg);
+    }
+}
+@media(max-width: 750px) {
+    .header .text h2 {font-size: 40px}
+}
+@media(max-width: 420px) {
+    .header .text h2 {font-size: 30px}
+}
+/* ===================== End Header ===================== */
+/* ===================== Start Content ===================== */
+.content {
+    min-height: 100vh
+}
+/* ===================== End Content ===================== */
+/* ===================== Start Tab ===================== */
+.content .tab {
+    background: #eee;
+}
+.content .tab ul {
+    font-size: 0
+}
+.content .tab ul li {
+    color: #00A2E8;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content .tab ul li.active {
+    background: #fff
+}
+.content .tab ul li+li {
+    border-right: 2px solid #fff
+}
+@media(max-width: 949px) {
+    .content .tab ul li {
+        display: block;
+        text-align: center;
+    }
+    .content .tab ul li+li {
+        border: 0;
+        border-top: 1px solid #ddd
+    }
+}
+/* ===================== End Tab ===================== */
+/* ===================== Start Data ===================== */
+.content .data .dataul .datali:not(.who) {
+    display: none
+}
+.content .dataul .datali {
+    padding: 25px 0
+}
+/* ===================== End Data ===================== */
+/* ===================== Start Contains ===================== */
+.content .dataul .datali article {
+    background: #f7f7f7;
+    padding: 15px;
+    margin-top: 25px;
+    border-right-width: 4px;
+    border-right-style: solid
+}
+.content .dataul .datali article p {
+    font-size: 16px;
+    line-height: 40px
+}
+.content .dataul .datali article:nth-of-type(1) {border-right-color: #fc7c66}
+.content .dataul .datali article:nth-of-type(2) {border-right-color: #17cc3a}
+.content .dataul .datali article:nth-of-type(3) {border-right-color: #db9b0b}
+.content .dataul .datali article:nth-of-type(4) {border-right-color: #31b3eb}
+.content .dataul .datali article:nth-of-type(1) h3 {color: #fc7c66}
+.content .dataul .datali article:nth-of-type(2) h3 {color: #17cc3a}
+.content .dataul .datali article:nth-of-type(3) h3 {color: #db9b0b}
+.content .dataul .datali article:nth-of-type(4) h3 {color: #31b3eb}
+.content .dataul .datali > h3 {
+    background: #FF7F27;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content .dataul .datali > h3:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    float: left;
+    padding-top: 7px
+}
+.content .dataul .datali > h3:hover {
+    background: #f57218;
+}
+.content .dataul .datali > ul {
+    padding: 10px;
+    margin-bottom: 25px;
+    display: none
+}
+.content .dataul .datali > ul li {
+    padding-bottom: 5px
+}
+.content .dataul .datali > ul li:before {
+    content: "\f0c8";
+    font-family: FontAwesome;
+    color: #FF7F27;
+    float: right;
+    font-size: 6px;
+    padding: 10px 0 0 10px
+}
+/* ===================== End Contains ===================== */
+/* ===================== Start Footer ===================== */
+.footer {
+    background: #00A2E8;
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+}
+.footer p:first-of-type {
+    font-size: 32px;
+    font-weight: bold;
+}
+.footer a {
+    color: #ffb786;
+}
+/* ===================== End Footer ===================== */
