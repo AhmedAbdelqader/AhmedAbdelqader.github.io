@@ -20,16 +20,16 @@ $(document).ready(function () {
                 scrollTop: $('.data').offset().top
             }, 500);
         }
-        if ($(this).data('tab') === '.details') {
+        /*if ($(this).data('tab') === '.details') {
             if (!$('.content .dataul .datali > ul').is(':visible')) {
                 toggleList.first().next('ul').slideDown();
             }
-        }
+        }*/
     });
     
     // Toggle List ====================================================================
     toggleList.on('click', function () {
-        $('.content .dataul .datali > ul').slideUp();
+        //$('.content .dataul .datali > ul').slideUp();
         if ($(this).next('ul').is(':visible')) {
             $(this).next('ul').slideUp();
         } else {
